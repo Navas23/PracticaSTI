@@ -1,0 +1,20 @@
+<h1>Calculadora efecto avalancha AES 128 en modo CBC</h1>
+<div>Introduzca una cadena de al menos 48 caracteres( puede introducir más separandolas con el caracter ';')</div>
+<input id="string" />
+<button onclick="startApp()">Start</button>
+<div>Introduzca el número de iteraciones (por defecto: 100)</div>
+<input id="iterations" />
+<div></div>
+<div></div>
+<span>Cadenas analizadas: </span><span class="nStrings"></span><div></div>
+<span>Numero de iteraciones totales: </span><span class="totalIterations"></span><div></div>
+<span>Media: </span><span class="mean"></span><div></div>
+<span>Moda: </span><span class="mode"></span><div></div>
+<span>Desviación típica: </span><span class="std"></span><div></div>
+<span>Incertidumbre: </span><span class="incertidumbre"></span><div></div>
+<div id="canvas"></div>
+
+<script type="text/javascript" src="https://rawgit.com/ricmoo/aes-js/master/index.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+<script type="text/javascript" src="aes.js"></script>
