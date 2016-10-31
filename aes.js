@@ -13,6 +13,7 @@ var iterations;
 
 var randomString;
 
+//Hace el flip de un bit en la posicion que se le indica
 var flipBit = function( string, position ){
 
   var newValue;
@@ -28,6 +29,7 @@ var flipBit = function( string, position ){
 
 }
 
+//Conversores
 var byteArrayToBinary = function( array ){
 
   var result = '';
@@ -109,6 +111,7 @@ var convertStrings = function(){
 
 }
 
+//Calcula la distancia de hamming de un string respecto a un array
 var calculateValues = function( bits, array){
 
   var result = [];
@@ -140,6 +143,7 @@ var calculateValues = function( bits, array){
 
 }
 
+//calcula la media
 var calculateMean = function( array ){
 
   var mean = 0;
@@ -153,6 +157,7 @@ var calculateMean = function( array ){
 
 }
 
+//calcula la desviacion tipica
 var standardDeviation = function(values){
   var avg = average(values);
 
@@ -177,6 +182,7 @@ var average = function(data){
   return avg;
 }
 
+//calcula la moda
 var mode = function(array){
 
   if(array.length == 0)
@@ -199,6 +205,7 @@ var mode = function(array){
   return maxEl;
 }
 
+//Realiza todas las operaciones necesarias (cifrado, generacion de cifrados tras modificar la cadena de bits, etc).
 var work = function(randomString){
 
   plainText = '';
@@ -324,6 +331,7 @@ var work = function(randomString){
 
 }
 
+//Recibe los argumentos del usuario y muestra al usuario los resultados al terminar la ejecucion
 var startApp = function(){
 
   plainText = '';
